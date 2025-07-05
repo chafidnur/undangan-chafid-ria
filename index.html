@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="id" class="notranslate" translate="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="color-scheme" content="light only">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="google" content="notranslate"/>
+    
+    <title>Wedding - Maroon Art</title>
+    <meta name="title" content="Wedding - Maroon Art">
+    <meta name="description" content="Undangan adat jawa / java wayang tanpa foto dengan warna maroon dan art style - Undangan Online: Undangan digital modern untuk pernikahan dan acara spesial lainnya.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Wedding - Maroon Art">
+    <meta property="og:description" content="Undangan adat jawa / java wayang tanpa foto dengan warna maroon dan art style">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/fill/style.css" />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/undangan.css">
+</head>
+<body>
+    <!-- Audio Background -->
+    <audio id="music" loop autoplay>
+        <source src="media/jawa-happy-javanese-backsound-mp3cutnet.mp3">
+    </audio>
+
+    <!-- Loader -->
+    <div id="loader" class="loader-wrapper">
+        <span class="loader">
+            <span class="loader-inner"></span>
+        </span>
+    </div>
+
+    <!-- Main Container -->
+    <div id="workspace-container" class="position-fixed h-100 w-100" style="overflow: hidden">
+        <div id="panZoom" class="position-fixed h-100 w-100" style="top: 0; right:0; bottom:0; left:0; transform-origin: 50% 50%;">
+            <div class="h-100 w-100 d-flex align-items-center justify-content-center">
+                <div class="canvas not-open">
+                    <!-- invitation -->
+                    <div id="satuMomen" data-guest="Nama Tamu" data-group="VIP">
+                        <div class="satumomen_track">
+                            <ul class="satumomen_list">
+                                
+                                <!-- Slide 1: Cover -->
+                                <li class="satumomen_slide satumomen_cover">
+                                    <div class="container-mobile cover" style="background-image: url(media/bg.webp);">
+                                        <div class="frame">
+                                            <img class="frame-tl animate__animated animate__fadeInTopLeft animate__slower" src="media/tl.webp" alt="frame">
+                                            <img class="frame-tr animate__animated animate__fadeInTopRight animate__slower" src="media/tr.webp" alt="frame">
+
+                                            <div class="frame-tl w-100 only-cover" style="transform: scale(1.2); transform-origin: top center;">
+                                                <img class="w-100 animate__animated animate__zoomIn animate__slower" src="media/gunungan.webp" alt="frame" style="animation-delay: 1.5s;">
+                                            </div>
+
+                                            <div class="frame-tl animate__animated animate__fadeInTopLeft animate__slow">
+                                                <div class="animate-left" style="transform: translate(-5%, 145%);">
+                                                    <img class="w-100" src="media/tl-2.webp" alt="frame" style="transform-origin: bottom left; animation-delay: 120ms;">
+                                                </div>
+                                            </div>
+                                            <div class="frame-tr animate__animated animate__fadeInTopRight animate__slow">
+                                                <div class="animate-right" style="transform: translate(5%, 145%);">
+                                                    <img class="w-100" src="media/tr-2.webp" alt="frame" style="transform-origin: bottom right; animation-delay: 120ms;">
+                                                </div>
+                                            </div>
+
+                                            <div class="only-cover frame-bl animate__animated animate__fadeInBottomLeft animate__slow" style="animation-delay: 2.5s;">
+                                                <div class="animate-left" style="transform: translate(-29%, -85%);">
+                                                    <img class="w-100" src="media/bl-1.webp" alt="frame" style="transform-origin: bottom left;">
+                                                </div>
+                                            </div>
+                                            <div class="only-cover frame-bl animate__animated animate__fadeInBottomLeft animate__slow" style="animation-delay: 2.2s;">
+                                                <div class="animate-left" style="transform: translate(-27%, -87%);">
+                                                    <img class="w-100" src="media/sinta.webp" alt="frame" style="transform-origin: bottom left; animation-delay: 100ms;">
+                                                </div>
+                                            </div>
+                                            <div class="only-cover frame-bl animate__animated animate__fadeInBottomLeft animate__slow" style="animation-delay: 2s;">
+                                                <div class="animate-left" style="transform: translate(-6%, -107%);">
+                                                    <img class="w-100" src="media/bl-3.webp" alt="frame" style="transform-origin: bottom left; animation-delay: 300ms;">
+                                                </div>
+                                            </div>
+
+                                            <div class="only-cover frame-br animate__animated animate__fadeInBottomRight animate__slow" style="animation-delay: 2.5s;">
+                                                <div class="animate-right" style="transform: translate(29%, -85%);">
+                                                    <img class="w-100" src="media/br-1.webp" alt="frame" style="transform-origin: bottom right;">
+                                                </div>
+                                            </div>
+                                            <div class="only-cover frame-br animate__animated animate__fadeInBottomRight animate__slow" style="animation-delay: 2.2s;">
+                                                <div class="animate-right" style="transform: translate(27%, -87%);">
+                                                    <img class="w-100" src="media/rama.webp" alt="frame" style="transform-origin: bottom right; animation-delay: 100ms;">
+                                                </div>
+                                            </div>
+                                            <div class="only-cover frame-br animate__animated animate__fadeInBottomRight animate__slow" style="animation-delay: 2s;">
+                                                <div class="animate-right" style="transform: translate(6%, -107%);">
+                                                    <img class="w-100" src="media/br-3.webp" alt="frame" style="transform-origin: bottom right; animation-delay: 300ms;">
+                                                </div>
+                                            </div>
+
+                                            <img class="frame-br w-100 animate__animated animate__fadeInUp animate__slower" src="media/bm.webp" alt="frame" style="animation-delay: 1s;">
+
+                                            <img class="frame-bl animate__animated animate__fadeInLeft animate__slower" src="media/bl-2.webp" alt="frame">
+                                            <img class="frame-br animate__animated animate__fadeInRight animate__slower" src="media/br-2.webp" alt="frame">
+                                        </div>
+                                        
+                                        <div class="d-flex justify-content-center align-items-center" style="height:100%;width:100%;background-size:cover;z-index:2;position:relative;">
+                                            <div class="w-100 pt-5">
+                                                <div class="text-center animate__animated animate__zoomIn animate__slower mt-5 mb-3" style="line-height:1;">
+                                                    <div class="editable mb-2" style="font-size:14.4px;">The Wedding Of</div>
+                                                    <div class="color-accent editable font-latin" style="font-size:80px;">Dinda</div>
+                                                    <div class="editable font-latin mb-2" style="font-size:30px;">&</div>
+                                                    <div class="color-accent editable mb-2 font-latin" style="font-size:80px;">Fahmi</div>
+                                                </div>
+                                                <div class="text-center mx-auto" style="max-width:280px;">
+                                                    <div class="text-center mb-3 py-3 px-2 animate__animated animate__zoomIn animate__slower" style="background-color:rgb(225 219 203 / 67%);border:2px solid var(--inv-border);border-radius:.5rem;">
+                                                        <div class="editable mb-1 animate__animated animate__fadeInUp animate__slower" style="font-size:14px;">Kepada Yth;<br />Bapak/Ibu/Saudara/i</div>
+                                                        <div id="guestNameSlot" class="editable color-accent h5 font-weight-bold mb-1 animate__animated animate__fadeInUp animate__slower" style="font-size:16px;">Nama Tamu</div>
+                                                    </div>
+                                                    <button class="btn-open-invitation btn btn-primary rounded-pill mb-4 animate__animated animate__fadeInUp animate__slow" style="font-size:14px;">Open Invitation</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- Slide 2: Greeting -->
+                                <li class="satumomen_slide">
+                                    <div class="container-mobile" style="background-image: url(media/bg.webp);">
+                                        <div class="frame">
+                                            <img class="frame-tl animate__animated animate__fadeInTopLeft animate__slower" src="media/tl.webp" alt="frame">
+                                            <img class="frame-tr animate__animated animate__fadeInTopRight animate__slower" src="media/tr.webp" alt="frame">
+                                            <img class="frame-br w-100 animate__animated animate__fadeInUp animate__slower" src="media/bm.webp" alt="frame" style="animation-delay: 1s;">
+                                            <img class="frame-bl animate__animated animate__fadeInLeft animate__slower" src="media/bl-2.webp" alt="frame">
+                                            <img class="frame-br animate__animated animate__fadeInRight animate__slower" src="media/br-2.webp" alt="frame">
+                                        </div>
+                                        
+                                        <div class="position-relative h-100 w-100 flex-column d-flex justify-content-center align-items-center" style="padding-bottom:30%;">
+                                            <div class="text-center editable mb-4 animate__animated animate__fadeInDown animate__slower" style="font-size:14.4px;">✤ Undangan Manten ✤</div>
+                                            <div class="pt-3 d-flex align-items-center justify-content-center mb-2 mx-auto animate__animated animate__zoomIn animate__slower" style="height:112px;width:60px;background-image:url('media/27897-gallery-1672939613.png');background-repeat:no-repeat;background-size:contain;background-position:center;">
+                                                <div class="editable text-left font-latin" style="font-size:60px;line-height:1;transform:translate(2px, 9px);">D</div>
+                                                <div class="editable text-right font-latin" style="font-size:60px;line-height:1;transform:translate(-8px, 33px);">F</div>
+                                            </div>
+                                            <div class="w-100 d-flex align-items-center justify-content-center">
+                                                <div class="text-right animate__animated animate__fadeInLeft animate__slower" style="width:40%;animation-delay:1500ms;">
+                                                    <div class="editable color-accent font-accent" style="font-size:40px;line-height:1;">Dinda</div>
+                                                    <div class="editable" style="font-size:14.4px;">Palembang</div>
+                                                </div>
+                                                <div class="editable px-2 font-latin animate__animated animate__zoomIn animate__slower" style="font-size:60px;animation-delay:500ms;">&</div>
+                                                <div class="text-left animate__animated animate__fadeInRight animate__slower" style="width:40%;animation-delay:1500ms;">
+                                                    <div class="editable color-accent font-accent" style="line-height:1;font-size:40px;">Fahmi</div>
+                                                    <div class="editable" style="font-size:14.4px;">Surakarta</div>
+                                                </div>
+                                            </div>
+                                            <div class="image-editable mx-auto animate__animated animate__fadeInUp animate__slower" style="height:auto;width:230px;overflow:hidden;position:absolute;bottom:-30px;">
+                                                <img src="media/301467-gallery-rNpYuhv9jd.png" alt="couple" style="width: 100%; height: 100%; object-fit: contain;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- Slide 3: Quote -->
+                                <li class="satumomen_slide">
+                                    <div class="container-mobile" style="background-image: url(media/bg.webp);">
+                                        <div class="frame">
+                                            <img class="frame-tl animate__animated animate__fadeInTopLeft animate__slower" src="media/tl.webp" alt="frame">
+                                            <img class="frame-tr animate__animated animate__fadeInTopRight animate__slower" src="media/tr.webp" alt="frame">
+                                            <img class="frame-br w-100 animate__animated animate__fadeInUp animate__slower" src="media/bm.webp" alt="frame" style="animation-delay: 1s;">
+                                            <img class="frame-bl animate__animated animate__fadeInLeft animate__slower" src="media/bl-2.webp" alt="frame">
+                                            <img class="frame-br animate__animated animate__fadeInRight animate__slower" src="media/br-2.webp" alt="frame">
+                                        </div>
+                                        
+                                        <div class="h-100 d-flex flex-column justify-content-center align-items-center">
+                                            <div class="animate__animated animate__fadeInDown animate__slower">
+                                                <div class="image-editable" style="width:158px;height:89px;margin:auto;overflow:hidden;padding-bottom:20px;">
+                                                    <img src="media/27897-gallery-1672939613.png" alt="logo" style="width: 100%; height: 100%; object-fit: contain;" />
+                                                </div>
+                                            </div>
+                                            <div class="text-center">
+                                                <div class="editable mb-4 animate__animated animate__fadeInDown animate__slower" style="font-size:14.4px;">✤ Adz-Dzariyat : 49 ✤</div>
+                                                <div class="color-accent editable quotes mb-3 animate__animated animate__zoomIn animate__slower" style="font-size:40px;">وَمِنْ كُلِّ شَيْءٍ خَلَقْنَا<br />زَوْجَيْنِ لَعَلَّكُمْ تَذَكَّرُوْنَ</div>
+                                                <div class="editable quotes animate__animated animate__fadeInUp animate__slower" style="font-size:13px;">Mahasuci Allah yang menciptakan makhluk-<br />Nya berpasang-pasangan</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- Slide 4: Bride & Groom -->
+                                <li class="satumomen_slide">
+                                    <div class="container-mobile" style="background-image: url(media/bg.webp);">
+                                        <div class="frame">
+                                            <img class="frame-tl animate__animated animate__fadeInTopLeft animate__slower" src="media/tl.webp" alt="frame">
+                                            <img class="frame-tr animate__animated animate__fadeInTopRight animate__slower" src="media/tr.webp" alt="frame">
+                                            <img class="frame-br w-100 animate__animated animate__fadeInUp animate__slower" src="media/bm.webp" alt="frame" style="animation-delay: 1s;">
+                                            <img class="frame-bl animate__animated animate__fadeInLeft animate__slower" src="media/bl-2.webp" alt="frame">
+                                            <img class="frame-br animate__animated animate__fadeInRight animate__slower" src="media/br-2.webp" alt="frame">
+                                        </div>
+                                        
+                                        <div class="d-flex justify-content-center align-items-center" style="height:100%;">
+                                            <div>
+                                                <div>
+                                                    <div class="image-editable mb-3 animate__animated animate__fadeInLeft animate__slower" style="height:100px;width:100px;margin:auto;border-radius:100%;overflow:hidden;">
+                                                        <img src="media/female-1-1687991981.webp" style="width: 100%;height: 100%;object-fit: cover;" alt="bride" />
+                                                    </div>
+                                                    <div class="text-center animate__animated animate__fadeInLeft animate__slower" style="position:relative;">
+                                                        <div class="editable color-accent h4 mb-2 font-accent" style="font-size:24px;">Rahmi Nur Aini, S.Ars.L</div>
+                                                        <div class="editable" style="font-size:14.4px;">Putri Kedua dari<br />Bapak Yusransyah (Is Dunia Barusa)<br />& Ibu Ferynita(Nyanyak)</div>
+                                                    </div>
+
+                                                    <div class="editable mb-3 text-center animate__animated animate__fadeIn animate__slower font-photograph-signature" style="font-size:30px;">dengan</div>
+                                                    
+                                                    <div class="text-center animate__animated animate__fadeInRight animate__slower" style="position:relative;">
+                                                        <div class="editable color-accent h4 mb-2 font-accent" style="font-size:24px;">Fariz Naufal, S.Ak</div>
+                                                        <div class="editable mb-1" style="font-size:14.4px;">Putra Kedua dari<br />Bapak Muhrojin & Ibu Endah Setyawati</div>
+                                                    </div>
+                                                    <div class="image-editable mt-3 animate__animated animate__fadeInRight animate__slower" style="height:100px;width:100px;margin:auto;border-radius:100%;overflow:hidden;">
+                                                        <img src="media/male-1-1687991959.webp" style="width: 100%;height: 100%;object-fit: cover;" alt="groom" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- Slide 5: Akad -->
+                                <li class="satumomen_slide">
+                                    <div class="container-mobile" style="background-image: url(media/bg.webp);">
+                                        <div class="frame">
+                                            <img class="frame-tl animate__animated animate__fadeInTopLeft animate__slower" src="media/tl.webp" alt="frame">
+                                            <img class="frame-tr animate__animated animate__fadeInTopRight animate__slower" src="media/tr.webp" alt="frame">
+                                            <img class="frame-br w-100 animate__animated animate__fadeInUp animate__slower" src="media/bm.webp" alt="frame" style="animation-delay: 1s;">
+                                            <img class="frame-bl animate__animated animate__fadeInLeft animate__slower" src="media/bl-2.webp" alt="frame">
+                                            <img class="frame-br animate__animated animate__fadeInRight animate__slower" src="media/br-2.webp" alt="frame">
+                                        </div>
+                                        
+                                        <div class="d-flex justify-content-center flex-column align-items-center" style="height:100%;">
+                                            <div class="animate__animated animate__fadeInDown animate__slower">
+                                                <div class="image-editable" style="width:158px;height:89px;margin:auto;overflow:hidden;padding-bottom:20px;">
+                                                    <img src="media/27897-gallery-1672939613.png" alt="logo" style="width: 100%; height: 100%; object-fit: contain;" />
+                                                </div>
+                                            </div>
+                                            <div class="text-center animate__animated animate__fadeInDown animate__slower">
+                                                <div class="editable color-accent font-weight-bold" style="font-size:14px;">✤ Akad Pernikahan ✤</div>
+                                                <div class="editable" style="font-size:14px;">Pukul 08.00 WIB - Selesai</div>
+                                            </div>
+                                            <div class="mt-3 text-center animate__animated animate__zoomIn animate__slower">
+                                                <div class="editable font-latin" style="font-size:50px;line-height:1.2;">Minggu</div>
+                                                <div class="editable color-accent font-accent" style="font-size:50px;line-height:1.2;">23.06.24</div>
+                                            </div>
+                                            <div class="mt-2 text-center animate__animated animate__zoomIn animate__slower">
+                                                <div class="editable color-accent font-weight-bold" style="font-size:14px;">✤ Kediaman Wanita ✤</div>
+                                                <div class="editable" style="font-size:14px;">Perum KCVRI<br />Blok A. No. 09 RT 01/RW 07</div>
+                                            </div>
+                                            <div class="mt-3 image-editable mx-auto animate__animated animate__fadeInUp animate__slower" style="height:auto;width:130px;overflow:hidden;">
+                                                <img src="media/301467-gallery-FMgCPTNp2h.png" alt="ornament" style="width: 100%; height: 100%; object-fit: contain;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- Slide 6: Resepsi -->
+                                <li class="satumomen_slide">
+                                    <div class="container-mobile" style="background-image: url(media/bg.webp);">
+                                        <div class="frame">
+                                            <img class="frame-tl animate__animated animate__fadeInTopLeft animate__slower" src="media/tl.webp" alt="frame">
+                                            <img class="frame-tr animate__animated animate__fadeInTopRight animate__slower" src="media/tr.webp" alt="frame">
+                                            <img class="frame-br w-100 animate__animated animate__fadeInUp animate__slower" src="media/bm.webp" alt="frame" style="animation-delay: 1s;">
+                                            <img class="frame-bl animate__animated animate__fadeInLeft animate__slower" src="media/bl-2.webp" alt="frame">
+                                            <img class="frame-br animate__animated animate__fadeInRight animate__slower" src="media/br-2.webp" alt="frame">
+                                        </div>
+                                        
+                                        <div class="d-flex justify-content-center flex-column align-items-center" style="height:100%;">
+                                            <div class="animate__animated animate__fadeInDown animate__slower">
+                                                <div class="image-editable" style="width:158px;height:89px;margin:auto;overflow:hidden;padding-bottom:20px;">
+                                                    <img src="media/27897-gallery-1672939613.png" alt="logo" style="width: 100%; height: 100%; object-fit: contain;" />
+                                                </div>
+                                            </div>
+                                            <div class="text-center animate__animated animate__fadeInDown animate__slower">
+                                                <div class="editable color-accent font-weight-bold" style="font-size:14px;">✤ Resepsi Pernikahan ✤</div>
+                                                <div class="editable" style="font-size:14px;">Pukul 11.00 WIB - Selesai</div>
+                                            </div>
+                                            <div class="mt-3 text-center animate__animated animate__zoomIn animate__slower">
+                                                <div class="editable font-latin" style="font-size:50px;line-height:1.2;">Minggu</div>
+                                                <div class="editable color-accent font-accent" style="font-size:50px;line-height:1.2;">23.06.24</div>
+                                            </div>
+                                            <div class="mt-2 text-center animate__animated animate__zoomIn animate__slower">
+                                                <div class="editable color-accent font-weight-bold" style="font-size:14px;">✤ Gedung Resepsi ✤</div>
+                                                <div class="editable" style="font-size:14px;">Harmony Banquet Halls<br />Jl. KH. R. Abdullah Bin Nuh</div>
+                                            </div>
+                                            <div class="mt-3 image-editable mx-auto animate__animated animate__fadeInUp animate__slower" style="height:auto;width:130px;overflow:hidden;">
+                                                <img src="media/301467-gallery-FMgCPTNp2h.png" alt="ornament" style="width: 100%; height: 100%; object-fit: contain;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- Slide 7: Maps -->
+                                <li class="satumomen_slide">
+                                    <div class="container-mobile" style="background-image: url(media/bg.webp);">
+                                        <div class="frame">
+                                            <img class="frame-tl animate__animated animate__fadeInTopLeft animate__slower" src="media/tl.webp" alt="frame">
+                                            <img class="frame-tr animate__animated animate__fadeInTopRight animate__slower" src="media/tr.webp" alt="frame">
+                                            <img class="frame-br w-100 animate__animated animate__fadeInUp animate__slower" src="media/bm.webp" alt="frame" style="animation-delay: 1s;">
+                                            <img class="frame-bl animate__animated animate__fadeInLeft animate__slower" src="media/bl-2.webp" alt="frame">
+                                            <img class="frame-br animate__animated animate__fadeInRight animate__slower" src="media/br-2.webp" alt="frame">
+                                        </div>
+                                        
+                                        <div class="d-flex justify-content-center align-items-center" style="height:100%;">
+                                            <div style="width:100%;">
+                                                <div>
+                                                    <div style="width:100%;margin:auto;border-radius:10px;overflow:hidden;margin-bottom:20px;padding-bottom:100%;position:relative;" class="animate__animated animate__fadeInDown animate__slow">
+                                                        <iframe width="100%" height="100%" style="border:0;position:absolute;" allowfullscreen="" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCpV55KNPo55TuxnDFd_dR3MD0luBrN1Gc&zoom=17&q=-6.558613899999999,106.77036269999999" class="maps-embed"></iframe>
+                                                    </div>
+                                                    <div class="text-center animate__animated animate__fadeInUp animate__slow">
+                                                        <div class="editable font-weight-bold" style="font-size:14px;">Harmony Banquet Halls</div>
+                                                        <div class="editable mb-3" style="font-size:14px;">Jl. KH. R. Abdullah Bin Nuh, RT. 06/RW. 02, Curugmekar, Kec. Bogor Barat, Kota Bogor, Jawa Barat</div>
+                                                        <a href="https://www.google.com/maps/place/?q=-6.558613899999999,106.77036269999999" class="btn-maps-link mx-auto btn btn-primary rounded-pill animate__animated animate__fadeInUp animate__slow" target="_blank" style="gap:8px;max-width:200px;" rel="noreferrer noopener">Petunjuk Ke Lokasi</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- Slide 8: RSVP -->
+                                <li class="satumomen_slide">
+                                    <div class="container-mobile" style="background-image: url(media/bg.webp);">
+                                        <div class="frame">
+                                            <img class="frame-tl animate__animated animate__fadeInTopLeft animate__slower" src="media/tl.webp" alt="frame">
+                                            <img class="frame-tr animate__animated animate__fadeInTopRight animate__slower" src="media/tr.webp" alt="frame">
+                                            <img class="frame-br w-100 animate__animated animate__fadeInUp animate__slower" src="media/bm.webp" alt="frame" style="animation-delay: 1s;">
+                                            <img class="frame-bl animate__animated animate__fadeInLeft animate__slower" src="media/bl-2.webp" alt="frame">
+                                            <img class="frame-br animate__animated animate__fadeInRight animate__slower" src="media/br-2.webp" alt="frame">
+                                        </div>
+                                        
+                                        <div class="d-flex justify-content-center align-items-center" style="height:100%;">
+                                            <div style="width:100%;">
+                                                <div class="animate__animated animate__fadeInDown animate__slower">
+                                                    <div class="image-editable" style="width:158px;height:89px;margin:auto;overflow:hidden;padding-bottom:20px;">
+                                                        <img src="media/27897-gallery-1672939613.png" alt="logo" style="width: 100%; height: 100%; object-fit: contain;" />
+                                                    </div>
+                                                </div>
+                                                <div class="text-center">
+                                                    <div class="editable font-latin color-accent h4 mb-4 animate__animated animate__fadeInDown animate__slower" style="font-size:28.8px;">Do'a Untuk Pengantin</div>
+                                                    <div class="editable mb-4 animate__animated animate__fadeInUp animate__slower" style="font-size:14.4px;">"Semoga Allah memberkahimu di waktu bahagia dan memberkahimu di waktu susah, dan mengumpulkan kalian berdua dalam kebaikan"<br /><br />[HR. Abu Daud]</div>
+                                                    <div class="editable mb-4 animate__animated animate__fadeInUp animate__slower">Tekan tombol dibawah ini untuk mengirim ucapan dan konfirmasi kehadiran</div>
+                                                    <button class="btn-rsvp btn btn-primary rounded-pill mb-4 animate__animated animate__fadeInUp animate__slow" style="font-size:20px;">Konfirmasi & Kirim Ucapan</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- Slide 9: Gift -->
+                                <li class="satumomen_slide">
+                                    <div class="container-mobile" style="background-image: url(media/bg.webp);">
+                                        <div class="frame">
+                                            <img class="frame-tl animate__animated animate__fadeInTopLeft animate__slower" src="media/tl.webp" alt="frame">
+                                            <img class="frame-tr animate__animated animate__fadeInTopRight animate__slower" src="media/tr.webp" alt="frame">
+                                            <img class="frame-br w-100 animate__animated animate__fadeInUp animate__slower" src="media/bm.webp" alt="frame" style="animation-delay: 1s;">
+                                            <img class="frame-bl animate__animated animate__fadeInLeft animate__slower" src="media/bl-2.webp" alt="frame">
+                                            <img class="frame-br animate__animated animate__fadeInRight animate__slower" src="media/br-2.webp" alt="frame">
+                                        </div>
+                                        
+                                        <div class="d-flex justify-content-center align-items-center" style="height:100%;">
+                                            <div style="width:100%;" class="text-center">
+                                                <div class="font-latin color-accent h4 mb-2 editable animate__animated animate__fadeInDown animate__slower" style="font-size:28.8px;">Tanda Kasih</div>
+                                                <div class="editable mb-4 animate__animated animate__fadeInDown animate__slower" style="font-size:14.4px;">Terima kasih telah menambah semangat kegembiraan pernikahan kami dengan kehadiran dan hadiah indah Anda.</div>
+                                                <div style="display:flex;gap:8px;">
+                                                    <button class="btn-gift btn btn-block btn-primary rounded-pill animate__animated animate__fadeInUp animate__slow" style="max-width:150px;margin:auto;font-size:14.4px;">💰 Cashless</button>
+                                                </div>
+                                                <div class="gift-container mt-3 p-4 rounded animate__animated animate__zoomIn animate__slow" style="display:none;">
+                                                    <div class="d-flex">
+                                                        <div class="mx-auto">
+                                                            <div class="d-flex align-items-center mb-3">
+                                                                <div style="width:80px;overflow:hidden;" class="image-editable">
+                                                                    <img src="media/bca-logo.png" style="width: 100%;height: 100%;object-fit: contain;" alt="bca" />
+                                                                </div>
+                                                                <div class="text-left pl-2">
+                                                                    <div class="editable account-number font-weight-bold h5 mb-0">12345678</div>
+                                                                    <div class="editable" style="font-size:14.4px;">BCA : Atas Nama Rekening</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex align-items-center">
+                                                                <div style="width:80px;overflow:hidden;" class="image-editable">
+                                                                    <img src="media/mandiri-logo.png" style="width: 100%;height: 100%;object-fit: contain;" alt="mandiri" />
+                                                                </div>
+                                                                <div class="text-left pl-2">
+                                                                    <div class="editable account-number font-weight-bold h5 mb-0">87654321</div>
+                                                                    <div class="editable" style="font-size:14.4px;">Mandiri : Atas Nama</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- Slide 10: Thanks -->
+                                <li class="satumomen_slide">
+                                    <div class="container-mobile" style="background-image: url(media/bg.webp);">
+                                        <div class="frame">
+                                            <img class="frame-tl animate__animated animate__fadeInTopLeft animate__slower" src="media/tl.webp" alt="frame">
+                                            <img class="frame-tr animate__animated animate__fadeInTopRight animate__slower" src="media/tr.webp" alt="frame">
+                                            <img class="frame-br w-100 animate__animated animate__fadeInUp animate__slower" src="media/bm.webp" alt="frame" style="animation-delay: 1s;">
+                                            <img class="frame-bl animate__animated animate__fadeInLeft animate__slower" src="media/bl-2.webp" alt="frame">
+                                            <img class="frame-br animate__animated animate__fadeInRight animate__slower" src="media/br-2.webp" alt="frame">
+                                        </div>
+                                        
+                                        <div class="watermark d-flex flex-column" style="height:100%;">
+                                            <div class="mt-auto" style="width:100%;">
+                                                <div class="text-center">
+                                                    <div class="editable mb-2 animate__animated animate__fadeInDown animate__slower" style="font-size:14px;">Merupakan suatu kebahagiaan dan kehormatan bagi kami, apabila Bapak/Ibu/Saudara/i, berkenan hadir dan memberikan do'a restu kepada kedua mempelai.</div>
+                                                    <div class="editable mb-3 animate__animated animate__fadeInDown animate__slower font-italic" style="font-size:16px;">Wassalamu'alaikum Warahmatullahi Wabarakatuh</div>
+                                                    
+                                                    <div class="text-center d-flex align-items-center justify-content-center animate__animated animate__fadeInDown animate__slow" style="gap:14px;line-height:1.2;">
+                                                        <div>
+                                                            <div class="editable" style="text-decoration:underline;font-size:13px;">Keluarga</div>
+                                                            <div class="editable font-weight-bold" style="font-size:13px;">Bapak H. Roni Nahroni<br />dan Ibu Hj. Siti Zainab</div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="editable" style="text-decoration:underline;font-size:13px;">Keluarga</div>
+                                                            <div class="editable font-weight-bold" style="font-size:13px;">Bapak Ir. Juhrani<br />dan Ibu Juniati, S.Km</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="watermark-placeholder text-center mb-auto mb-5 pb-5">
+                                                <div class="wm-music mt-3 text-center animate__animated animate__fadeInUp animate__slower animate__delay-1s" style="font-size: 60%; opacity: 0.5;">
+                                                    <div><strong>Music:</strong></div>
+                                                    <div>Jawa - Happy Javanese Backsound</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Navigation Menu -->
+                    <div id="smMenu" class="satumomen_menu" style="display: none;">
+                        <ul class="satumomen_menu_list">
+                            <li class="satumomen_menu_item active" data-slide="0">
+                                <i class="icon ph-fill ph-envelope" style="color:currentColor;"></i>
+                                <span>Opening</span>
+                            </li>
+                            <li class="satumomen_menu_item" data-slide="1">
+                                <i class="icon ph-fill ph-star-and-crescent" style="color:currentColor;"></i>
+                                <span>Greeting</span>
+                            </li>
+                            <li class="satumomen_menu_item" data-slide="2">
+                                <i class="icon ph-fill ph-article" style="color:currentColor;"></i>
+                                <span>Quotes</span>
+                            </li>
+                            <li class="satumomen_menu_item" data-slide="3">
+                                <i class="icon ph-fill ph-heart" style="color: currentColor;"></i>
+                                <span>Mempelai</span>
+                            </li>
+                            <li class="satumomen_menu_item" data-slide="4">
+                                <i class="icon ph-fill ph-clock" style="color:currentColor;"></i>
+                                <span>Akad</span>
+                            </li>
+                            <li class="satumomen_menu_item" data-slide="5">
+                                <i class="icon ph-fill ph-clock" style="color:currentColor;"></i>
+                                <span>Resepsi</span>
+                            </li>
+                            <li class="satumomen_menu_item" data-slide="6">
+                                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.532 2.937a6.89 6.89 0 0 1 7.034.058C17.71 4.327 19.012 6.705 19 9.26c-.05 2.54-1.447 4.929-3.193 6.775a18.727 18.727 0 0 1-3.358 2.82 1.173 1.173 0 0 1-.408.144.82.82 0 0 1-.39-.119 18.515 18.515 0 0 1-4.839-4.547A9.28 9.28 0 0 1 5 9.134c-.001-2.562 1.347-4.928 3.532-6.197Zm1.262 7.258a2.378 2.378 0 0 0 2.198 1.497 2.339 2.339 0 0 0 1.683-.701c.446-.454.696-1.07.694-1.713a2.423 2.423 0 0 0-1.462-2.243 2.346 2.346 0 0 0-2.594.52 2.455 2.455 0 0 0-.519 2.64Z" fill="currentColor"/><ellipse opacity=".4" cx="12" cy="21" rx="5" ry="1" fill="currentColor"/></svg>
+                                <span>Maps</span>
+                            </li>
+                            <li class="satumomen_menu_item" data-slide="7">
+                                <i class="icon ph-fill ph-chat-circle-text" style="color:currentColor;"></i>
+                                <span>RSVP</span>
+                            </li>
+                            <li class="satumomen_menu_item" data-slide="8">
+                                <i class="icon ph-fill ph-gift" style="color: currentColor;"></i>
+                                <span>Gift</span>
+                            </li>
+                            <li class="satumomen_menu_item" data-slide="9">
+                                <i class="icon ph-fill ph-mosque" style="color:currentColor;"></i>
+                                <span>Thanks</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Floating Action Buttons -->
+                    <div class="floating-action d-flex align-items-end flex-column">
+                        <button id="btnMusic" class="btn btn-float">
+                            <svg class="play" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 256 256"><path d="M160,32V224a8,8,0,0,1-12.91,6.31L77.25,176H32a16,16,0,0,1-16-16V96A16,16,0,0,1,32,80H77.25l69.84-54.31A8,8,0,0,1,160,32Zm32,64a8,8,0,0,0-8,8v48a8,8,0,0,0,16,0V104A8,8,0,0,0,192,96Zm32-16a8,8,0,0,0-8,8v80a8,8,0,0,0,16,0V88A8,8,0,0,0,224,80Z"></path></svg>
+                            <svg class="pause" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 256 256"><path d="M53.92,34.62A8,8,0,1,0,42.08,45.38L73.55,80H32A16,16,0,0,0,16,96v64a16,16,0,0,0,16,16H77.25l69.84,54.31A8,8,0,0,0,160,224V175.09l42.08,46.29a8,8,0,1,0,11.84-10.76Zm92.16,77.59A8,8,0,0,0,160,106.83V32a8,8,0,0,0-12.91-6.31l-39.85,31a8,8,0,0,0-1,11.7Z"></path></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- RSVP Modal -->
+    <div id="rsvpModal" class="modal fade" tabindex="-1" role="dialog" style="display: none;">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-4">
+                <button class="modal-close">&times;</button>
+                <h3>Konfirmasi Kehadiran</h3>
+                <form id="rsvpForm">
+                    <div class="form-group">
+                        <label for="rsvpName">Nama:</label>
+                        <input type="text" id="rsvpName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="rsvpAttendance">Kehadiran:</label>
+                        <select id="rsvpAttendance" required>
+                            <option value="">Pilih</option>
+                            <option value="hadir">Hadir</option>
+                            <option value="tidak-hadir">Tidak Hadir</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="rsvpGuests">Jumlah Tamu:</label>
+                        <input type="number" id="rsvpGuests" min="1" max="5" value="1">
+                    </div>
+                    <div class="form-group">
+                        <label for="rsvpMessage">Ucapan:</label>
+                        <textarea id="rsvpMessage" rows="4" placeholder="Berikan ucapan terbaik untuk pengantin..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Kirim</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/undangan.js"></script>
+</body>
+</html>
